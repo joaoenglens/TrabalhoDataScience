@@ -18,7 +18,7 @@ A preparação dos dados compreendeu as seguintes etapas:
 4. Cálculo das médias das notas.
 5. Conversão das categorias de renda, originalmente identificadas por letras, em valores numéricos expressos em quantidade de salários, utilizando o valor central de cada faixa.
 
-![alt text](fluxograma-dados.png)
+<!-- Inserir aqui o fluxograma do tratamento dos dados. -->
 
 ## Análise estatística
 
@@ -43,3 +43,16 @@ O p-valor obtido foi muito baixo, fornecendo evidências favoráveis à rejeiç�
 - glob
 - statsmodels
 - SciPy
+
+## Como executar
+
+Baixe os microdados do ENEM de **2009 a 2020** no portal do Inep, indicado na seção [Dados](#dados). Coloque os arquivos baixados nos caminhos de entrada utilizados pelos programas e verifique se as bibliotecas necessárias estão disponíveis no ambiente.
+
+Execute os programas na seguinte ordem:
+
+1. Todos os programas de limpeza.
+2. `unir_limpos`.
+3. O notebook `arrumar_salario`.
+4. `analises_por_grupo`.
+
+Conclua cada etapa antes de iniciar a seguinte. No notebook, execute todas as células em ordem.
